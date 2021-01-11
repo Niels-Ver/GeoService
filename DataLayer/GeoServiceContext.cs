@@ -3,6 +3,7 @@ using DomainLayer.DomainLayer;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 
 namespace DataLayer
@@ -29,7 +30,7 @@ namespace DataLayer
                     connectionString = @"Data Source=DESKTOP-RHUF3RT\SQLEXPRESS;Initial Catalog=GeoServiceDB;Integrated Security=True";
                     break;
                 case "Test":
-                    connectionString = @"Data Source=DESKTOP-RHUF3RT\SQLEXPRESS;Initial Catalog=GeoServiceDB;Integrated Security=True";
+                    connectionString = @"Data Source=DESKTOP-RHUF3RT\SQLEXPRESS;Initial Catalog=GeoServiceTestDB;Integrated Security=True";
                     break;
             }
         }
@@ -41,9 +42,17 @@ namespace DataLayer
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (connectionString == null)
-                SetConnectionString();
-            optionsBuilder.UseSqlServer(connectionString);
+            try
+            {
+                if (connectionString == null)
+                    SetConnectionString();
+                optionsBuilder.UseSqlServer(connectionString);
+            } 
+            catch
+            {
+                throw new DataException("Er is een error met de database");
+            }
+            
         }
     }
 }

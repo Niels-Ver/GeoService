@@ -1,0 +1,183 @@
+2021-01-11T10:29:19.5927896+01:00 0HM5M2D6HJ10O:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DataLayer.Repositories.CountryRepository.RemoveCountry(Country country) in D:\School\Web 4\Project\GeoService\GeoService\DataLayer\Repositories\CountryRepository.cs:line 28
+   at DomainLayer.DomainLayer.GeoServiceManager.RemoveCountry(Country country) in D:\School\Web 4\Project\GeoService\GeoService\DomainLayer\DomainLayer\GeoServiceManager.cs:line 86
+   at GeoService.Repositories.CountryApiRepository.RemoveCountry(Country country) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Repositories\CountryApiRepository.cs:line 44
+   at GeoService.Controllers.CountryController.Delete(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Controllers\CountryController.cs:line 65
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-11T10:29:19.5987580+01:00 0HM5M2D6HJ10O:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DataLayer.Repositories.CountryRepository.RemoveCountry(Country country) in D:\School\Web 4\Project\GeoService\GeoService\DataLayer\Repositories\CountryRepository.cs:line 28
+   at DomainLayer.DomainLayer.GeoServiceManager.RemoveCountry(Country country) in D:\School\Web 4\Project\GeoService\GeoService\DomainLayer\DomainLayer\GeoServiceManager.cs:line 86
+   at GeoService.Repositories.CountryApiRepository.RemoveCountry(Country country) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Repositories\CountryApiRepository.cs:line 44
+   at GeoService.Controllers.CountryController.Delete(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Controllers\CountryController.cs:line 65
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-11T10:30:26.0632214+01:00 0HM5M2DV4O40I:00000002 [INF] Remove continent (1009) called (3936e9f3)
+2021-01-11T10:30:32.1762416+01:00 0HM5M2DV4O40I:00000003 [INF] Remove continent (1007) called (fe4862ea)
+2021-01-11T10:30:35.5268199+01:00 0HM5M2DV4O40I:00000004 [INF] Remove continent (1006) called (f3519ed6)
+2021-01-11T10:30:37.4513792+01:00 0HM5M2DV4O40I:00000005 [INF] Remove continent (1005) called (86cf6ed5)
+2021-01-11T10:48:36.6523265+01:00  [INF] Application is shutting down... (90f52c38)
+2021-01-11T11:01:00.4693194+01:00 0HM5M2ULCVC07:00000005 [INF] Get continent (1005) called (9f143e1e)
+2021-01-11T11:01:00.4692573+01:00 0HM5M2ULCVC07:00000005 [INF] Get continent (1005) called (9f143e1e)
+2021-01-11T11:01:00.4693533+01:00 0HM5M2ULCVC07:00000005 [INF] Get continent (1005) called (9f143e1e)
+2021-01-11T11:01:06.6419519+01:00 0HM5M2ULCVC07:00000006 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:06.6421347+01:00 0HM5M2ULCVC07:00000006 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:06.6422679+01:00 0HM5M2ULCVC07:00000006 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:17.1701893+01:00 0HM5M2ULCVC07:00000007 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:17.1702917+01:00 0HM5M2ULCVC07:00000007 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:17.1703738+01:00 0HM5M2ULCVC07:00000007 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:18.0326828+01:00 0HM5M2ULCVC07:00000008 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:18.0327526+01:00 0HM5M2ULCVC07:00000008 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:18.0328181+01:00 0HM5M2ULCVC07:00000008 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:18.7172162+01:00 0HM5M2ULCVC07:00000009 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:18.7172879+01:00 0HM5M2ULCVC07:00000009 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:18.7173552+01:00 0HM5M2ULCVC07:00000009 [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:19.3136299+01:00 0HM5M2ULCVC07:0000000A [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:19.3137731+01:00 0HM5M2ULCVC07:0000000A [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:19.3139003+01:00 0HM5M2ULCVC07:0000000A [INF] Get continent (1012) called (98a6f945)
+2021-01-11T11:01:30.3781679+01:00 0HM5M2ULCVC07:0000000B [INF] Get continent called (ba41eae7)
+2021-01-11T11:01:30.3782617+01:00 0HM5M2ULCVC07:0000000B [INF] Get continent called (ba41eae7)
+2021-01-11T11:01:30.3783537+01:00 0HM5M2ULCVC07:0000000B [INF] Get continent called (ba41eae7)
+2021-01-11T11:01:30.3788547+01:00 0HM5M2ULCVC07:0000000B [INF] Get continent called (ba41eae7)
+2021-01-11T11:01:47.3155974+01:00 0HM5M2ULCVC07:0000000B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+DataLayer.DataException: Geen land voor deze id gevonden
+   at DataLayer.Repositories.CountryRepository.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\DataLayer\Repositories\CountryRepository.cs:line 27
+   at DomainLayer.DomainLayer.GeoServiceManager.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\DomainLayer\DomainLayer\GeoServiceManager.cs:line 57
+   at GeoService.Repositories.CountryApiRepository.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Repositories\CountryApiRepository.cs:line 39
+   at GeoService.Controllers.CountryController.Get(Int32 continentId, Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Controllers\CountryController.cs:line 36
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-11T11:01:47.3156521+01:00 0HM5M2ULCVC07:0000000B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+DataLayer.DataException: Geen land voor deze id gevonden
+   at DataLayer.Repositories.CountryRepository.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\DataLayer\Repositories\CountryRepository.cs:line 27
+   at DomainLayer.DomainLayer.GeoServiceManager.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\DomainLayer\DomainLayer\GeoServiceManager.cs:line 57
+   at GeoService.Repositories.CountryApiRepository.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Repositories\CountryApiRepository.cs:line 39
+   at GeoService.Controllers.CountryController.Get(Int32 continentId, Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Controllers\CountryController.cs:line 36
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-11T11:01:47.3157027+01:00 0HM5M2ULCVC07:0000000B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+DataLayer.DataException: Geen land voor deze id gevonden
+   at DataLayer.Repositories.CountryRepository.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\DataLayer\Repositories\CountryRepository.cs:line 27
+   at DomainLayer.DomainLayer.GeoServiceManager.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\DomainLayer\DomainLayer\GeoServiceManager.cs:line 57
+   at GeoService.Repositories.CountryApiRepository.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Repositories\CountryApiRepository.cs:line 39
+   at GeoService.Controllers.CountryController.Get(Int32 continentId, Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Controllers\CountryController.cs:line 36
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-11T11:01:47.3160529+01:00 0HM5M2ULCVC07:0000000B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+DataLayer.DataException: Geen land voor deze id gevonden
+   at DataLayer.Repositories.CountryRepository.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\DataLayer\Repositories\CountryRepository.cs:line 27
+   at DomainLayer.DomainLayer.GeoServiceManager.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\DomainLayer\DomainLayer\GeoServiceManager.cs:line 57
+   at GeoService.Repositories.CountryApiRepository.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Repositories\CountryApiRepository.cs:line 39
+   at GeoService.Controllers.CountryController.Get(Int32 continentId, Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Controllers\CountryController.cs:line 36
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-11T11:02:04.6327954+01:00  [INF] Get continent called (ba41eae7)
+2021-01-11T11:02:10.0946231+01:00  [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+DataLayer.DataException: Geen land voor deze id gevonden
+   at DataLayer.Repositories.CountryRepository.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\DataLayer\Repositories\CountryRepository.cs:line 27
+   at DomainLayer.DomainLayer.GeoServiceManager.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\DomainLayer\DomainLayer\GeoServiceManager.cs:line 57
+   at GeoService.Repositories.CountryApiRepository.GetCountry(Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Repositories\CountryApiRepository.cs:line 39
+   at GeoService.Controllers.CountryController.Get(Int32 continentId, Int32 id) in D:\School\Web 4\Project\GeoService\GeoService\GeoService\Controllers\CountryController.cs:line 36
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-11T11:02:20.8865459+01:00 0HM5M2VPABFK8:00000002 [INF] Get continent (1012) called (98a6f945)

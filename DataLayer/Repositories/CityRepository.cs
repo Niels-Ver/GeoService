@@ -2,6 +2,7 @@
 using DomainLayer.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace DataLayer.Repositories
@@ -17,17 +18,24 @@ namespace DataLayer.Repositories
 
         public City GetCity(int id)
         {
-            throw new NotImplementedException();
+            City city = context.Cities.FirstOrDefault(c => c.Id == id);
+            return city;
         }
 
         public void RemoveCity(City city)
         {
-            throw new NotImplementedException();
+            context.Cities.Remove(city);
+            context.SaveChanges();
         }
 
         public void UpdateCity(City city)
         {
-            throw new NotImplementedException();
+            City teUpdatenCity = context.Cities.Single(c => c.Id == city.Id);
+            teUpdatenCity.Name = city.Name;
+            teUpdatenCity.Population = city.Population;
+
+            context.SaveChanges();
+
         }
     }
 }

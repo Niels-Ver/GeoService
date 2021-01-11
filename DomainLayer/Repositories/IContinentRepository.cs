@@ -12,6 +12,7 @@ namespace DomainLayer.Repositories
         void AddContinent(Continent continent);
         void UpdateContinent(Continent continent);
         void RemoveContinent(Continent continent);
+        bool ExistsContinent(Continent continent);
 
         void AddCountryToContinent(int id, Country country);
     }

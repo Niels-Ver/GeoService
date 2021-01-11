@@ -1,3 +1,5 @@
+using DomainLayer.Repositories;
+using GeoService.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +28,9 @@ namespace GeoService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<IContinentRepository, ContinentApiRepository>();
+            services.AddSingleton<ICountryRepository, CountryApiRepository>();
+            services.AddSingleton<ICityRepository, CityApiRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

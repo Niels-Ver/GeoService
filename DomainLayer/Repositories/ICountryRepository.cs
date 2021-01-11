@@ -13,6 +13,7 @@ namespace DomainLayer.Repositories
         void RemoveCountry(Country country);
 
         public void AddCityToCountry(int id, City city);
+        public void AddCapitolToCountry(int id, City city);
         public void AddRiverToCountry(int id, River river);
     }
 }
